@@ -1,0 +1,25 @@
+html
+    head
+        title Demo
+    body
+        form(action="http://localhost:7000/" method="get")
+            lable Uname: &nbsp
+            input(type="text" name="uname")
+            br
+            br
+            lable gender :
+            br
+            input(type="radio",name="gender", value='1', checked=gender=="Male")
+            | Male
+
+            input(type="radio",name="gender", value='0',checked=gender=="Female")
+            | Female
+            br
+            br
+            label Locations &nbsp
+            select(name='dropdown', id='')
+                each val in ['Chennai','Bangalore','Hyderabad','Trivandrum','Mumbai']
+                    option=val
+
+
+
